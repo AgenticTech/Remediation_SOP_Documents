@@ -44,3 +44,5 @@
 - Implement proper error handling and logging
 - Use Azure SDK for Python or Azure CLI for interacting with Azure
 - Ensure proper authentication and authorization before performing actions
+### Reference 
+- https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal 
