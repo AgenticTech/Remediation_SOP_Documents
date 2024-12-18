@@ -31,7 +31,6 @@ Python
    - Description: AWS region where the bucket will be created
    - Required: true
    - Default: "us-east-1"
-   - Example Values: "us-east-1", "eu-west-1"
 
 3. **bucket_tags**
    - Type: dictionary
