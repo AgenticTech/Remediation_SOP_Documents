@@ -46,31 +46,13 @@ Python
 
 ## Logic Flow
 
-1. **Pre-Creation Validation**
-   - Validate AWS credentials
-   - Validate bucket name against AWS naming rules
-   - Check bucket name availability globally
-   - Validate region availability
-
-2. **Bucket Creation Process**
+   **Bucket Creation Process**
    - Initialize AWS S3 client
    - Create bucket with specified name and region
    - Handle region-specific requirements
    - Apply bucket configurations
 
-3. **Post-Creation Configuration**
-   - Apply tags if provided
-   - Configure versioning if enabled
-   - Verify bucket accessibility
-   - Configure default encryption (recommended)
 
-4. **Error Handling Scenarios**
-   - Bucket name already exists
-   - Invalid bucket name format
-   - Region not available
-   - Insufficient permissions
-   - Network connectivity issues
-   - AWS service quota limits
 
 ## Success Criteria
 - Bucket is created and accessible
