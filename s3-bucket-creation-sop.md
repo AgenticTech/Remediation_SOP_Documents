@@ -13,18 +13,13 @@ Python
 - boto3
 - AWS SDK for Python
 
-## Credentials Required
-- AWS_ACCESS_KEY_ID
-- AWS_SECRET_ACCESS_KEY
-- AWS_REGION
-
 ## Input Parameters
 
 1. **bucket_name**
    - Type: string
    - Description: Unique name for the S3 bucket (must be globally unique across all AWS regions)
    - Required: true
-   - Default: null
+   - Default: "agtch-s3-demo"
    - Validation Rules:
      - Between 3 and 63 characters long
      - Contains only lowercase letters, numbers, dots (.), and hyphens (-)
@@ -35,15 +30,14 @@ Python
    - Type: string
    - Description: AWS region where the bucket will be created
    - Required: true
-   - Default: null
+   - Default: "us-east-1"
    - Example Values: "us-east-1", "eu-west-1"
 
 3. **bucket_tags**
    - Type: dictionary
    - Description: Key-value pairs for bucket classification and organization
    - Required: false
-   - Default: {}
-   - Example: {"Environment": "Production", "Project": "DataLake"}
+   - Default: {"Environment": "Production", "Project": "agentictech"}
 
 4. **versioning_enabled**
    - Type: boolean
